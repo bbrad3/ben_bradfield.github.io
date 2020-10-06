@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Color Genorator</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <!-- select a few options from form and generate 5 colors -->
+        <!-- build so that # of colors and inputs can be changed -->
+
+        <form id="formSelect">
+            <!-- select primary color [ROYGBIV] -->
+            <label for="colorSelect">Primary Color: </label>
+            <select name="colorSelect" id="colorSelect">
+                <option value="red">red</option>
+                <option value="orange">orange</option>
+                <option value="yellow">yellow</option>
+                <option value="green">green</option>
+                <option value="blue">blue</option>
+                <option value="indigo">indigo</option>
+                <option value="violet">violet</option>
+                <option value="gray">gray</option>
+            </select>
+
+            <!-- select light or dark theme -->
+            <label for="themeSelect">Theme: </label>
+            <select name="themeSelect" id="themeSelect">
+                <option value="light">light</option>
+                <option value="dark">dark</option>
+            </select>
+
+            <button type="submit" id="submitBtn">Generate Colors</button>
+        </form>
+
+        <!-- SHOW 5 hex or rgb colors
+            main bold color
+            complimentary bold color
+            main background color
+            complimentary background color
+            txt color -->
+        <div id="colorsDisplay">
+            <div id="color1" class="colorDiv"></div>
+            <div id="color2" class="colorDiv"></div>
+            <div id="color3" class="colorDiv"></div>
+            <div id="color4" class="colorDiv"></div>
+            <div id="color5" class="colorDiv"></div>
+        </div>
+    
+            <script src="./app.js"></script>
+    </body>
+</html>

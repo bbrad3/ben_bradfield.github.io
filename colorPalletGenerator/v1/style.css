@@ -1,0 +1,14 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#colorsDisplay {
+    display: flex;
+    flex-direction: row;
+}
+
+.colorDiv {
+    width: 18%;
+    height: 200px;
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Color Genorator</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+            <p>Press the spacebar to generate colors...</p>
+            <p>If you like a color...save it to the list...</p>
+            <p>Bring your pages to life!</p>
+        </header>
+
+        <div id="colorsDisplay">
+            <div id="color1" class="colorDiv">
+                <span class="textSpan"></span><img class="saveImg" src="./png/003-save-button.png" alt="">
+            </div>
+            <div id="color2" class="colorDiv">
+                <span class="textSpan"></span><img class="saveImg" src="./png/003-save-button.png" alt="">
+            </div>
+            <div id="color3" class="colorDiv">
+                <span class="textSpan"></span><img class="saveImg" src="./png/003-save-button.png" alt="">
+            </div>
+            <div id="color4" class="colorDiv">
+                <span class="textSpan"></span><img class="saveImg" src="./png/003-save-button.png" alt="">
+            </div>
+            <div id="color5" class="colorDiv">
+                <span class="textSpan"></span><img class="saveImg" src="./png/003-save-button.png" alt="">
+            </div>
+        </div>
+
+        <div id="savedDisplay">
+            <header>
+                <p>Highlight a color you like then add it the final list below.</p>
+            </header>
+            <!-- SAVED COLORS GOES HERE -->
+        </div>
+
+        <!-- CHOOSE COLORS FOR WEBSITE -->
+            <!-- HIGHLIGHT A COLOR FROM SAVED COLORS, THEN SELECT WHERE IT GOES -->
+        <div class="selectColors container">
+            <div class="chooseColor">
+                <p><span class="chosenColor"></span></p>
+                <button id="choose1" class="chooseBtn">Navbar Color</button>
+            </div>
+            <div class="chooseColor">
+                <p><span class="chosenColor"></span></p>
+                <button id="choose2" class="chooseBtn">Jumbo Color</button>
+            </div>
+            <div class="chooseColor">
+                <p><span class="chosenColor"></span></p>
+                <button id="choose3" class="chooseBtn">Card Color</button>
+            </div>
+            <div class="chooseColor">
+                <p><span class="chosenColor"></span></p>
+                <button id="choose4" class="chooseBtn">Body Color</button>
+            </div>
+            <div class="chooseColor">
+                <p><span class="chosenColor"></span></p>
+                <button id="choose5" class="chooseBtn">Text Color</button>
+            </div>
+
+            <button id="populateBtn">GO!</button>
+        </div>
+
+        <!-- MOCK WEBSITE TO TEST COLORS -->
+        <div id="mockWebsite">
+            <div id="webContainer" class="container">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">Brand</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home 
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                    </div>
+                </nav>
+
+                <div class="jumbotron jumbotron-fluid">
+                    <div>
+                        <h1 class="display-4">Hello World!</h1>
+                        <p class="lead">Take a look at the great color pallet used on this website!</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Your title here</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Another title here</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div>Icons made by 
+            <a href="https://www.flaticon.local/authors/freepik" title="Freepik">Freepik</a> from 
+            <a href="https://www.flaticon.local/" title="Flaticon">www.flaticon.local</a>
+        </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
+    </body>
+</html>
