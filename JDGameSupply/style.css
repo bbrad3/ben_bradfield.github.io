@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#navbar {
+    /* play with this */
+    display: inline;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    color: white;
+}
+
+#navbar #brand {
+    height: 20px;
+    width: auto;
+}
+
+#navbar #navLinks {
+    display: flex;
+    justify-content: right;
+}
+
+header {
+    width: auto;
+    height: 30vw;
+    background-image: url("./BujOyt.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 -8px 20px black;
+}
+
+header #logo-blk {
+    position: relative;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -95%);
+    background-color: rgba(235, 235, 235, 0);
+    height: auto;
+    width: 40vw;
+    min-width: 250px;
+}
+
+#productDisplay {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background: linear-gradient(rgb(80, 80, 80), rgb(0, 0, 0), rgb(80, 80, 80));
+    padding-bottom: 2%;
+    box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card {
+    width: 30%;
+    min-width: 250px;
+    /* margin: 1% 1.5%; */
+    height: auto;
+    margin: 1% 1% 0 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.5rem;
+    background-color: rgb(231, 231, 231);
+    font-weight: 500;
+    font-size: large;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.card p {
+    margin: 2px auto;
+}
+
+.buyLinks {
+    text-align: center;
+    padding: 5px 0px;
+}
+
+.buyLinks h5 {
+    margin-bottom: 2px;
+}
+
+.buyLinks a {
+    text-decoration: none;
+    padding: 0px 2px;
+    color: blue;
+}
+
+.buyLinks a:hover {
+    color: rgb(0, 140, 255);
+}
+
+footer {
+    height: 5vh;
+    width: 100%;
+    background-color: black;
+    color: rgba(198, 255, 42, 0.911);
+    padding-top: 5px;
+}
+
+footer cite {
+    margin-left: 10px;
+    font-size: 0.8rem;
+}
+
+.intro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
