@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HangBoard App</title>
+        
+        <style>
+            body {
+                width: 60vw;
+                margin: 5% auto;
+                padding: 1% 5% 5% 5%;
+                /* text-align: center; */
+                background-color: rgb(255, 250, 248);
+                border: 2px solid #000;
+                font-weight: 900;
+            }
+            .screen span {
+                font-size: 24px;
+            }
+            .controls label {
+                display: block;
+            }
+            .screen {
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Hangboarding Timer</h1>
+
+        <audio id="audio1" src="sounds/A-Tone-His_Self-1266414414.mp3"></audio>
+        <audio id="audio2" src="sounds/Fuzzy Beep-SoundBible.com-1580329899.mp3"></audio>
+        <audio id="audio3" src="sounds/chinese-gong-daniel_simon.mp3"></audio>
+
+        <div class="screen">
+            <div>
+                Hang timer: <span id="hangS" type="number">7</span>s
+            </div>
+            <div>
+                Pause timer: <span id="pauseS">3</span>s
+            </div>
+            <div>
+                Rest timer: <span id="restS">180</span>s
+            </div>
+            <div>
+                Round: <span id="roundNow">1</span> / <span id="roundsS">5</span>
+            </div>
+            <div>
+                Set: <span id="setNow">1</span> / <span id="setsS">3</span>
+            </div>
+
+            <button id="timerBtn">Start Workout!</button>
+        </div>
+<br>
+<br>
+        <div class="controls">
+            <label for="hangT">Hang Time:</label>    
+                <input id="hangT" type="number" value="7" min="0">
+            <label for="pauseT">Pause Time:</label>    
+                <input id="pauseT" type="number" value="3" min="0">
+            <label for="restT">Rest Time:</label>    
+                <input id="restT" type="number" value="180" min="0">
+            <label for="rounds"># of Rounds</label>    
+                <input id="rounds" type="number" value="5" min="1">
+            <label for="sets"># of Sets:</label>    
+                <input id="sets" type="number" value="3" min="1">
+        </div>
+
+        <script src="hangboard.js"></script>
+    </body>
+</html>
